@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impossible Buttons</title>
+    <style>
+        body{
+            display: flex;
+            align-items:center;
+            justify-content:space-around;
+        }
+        button{
+            background: blue;
+            padding: 20px;
+            border: 1px solid rgb(0, 0, 65);
+            border-radius: 25px;
+            box-shadow: 50px 0 0 0 black;
+        }
+        button:active{
+            background: blue;
+            padding: 20px;
+            border: 1px solid rgb(0, 0, 65);
+            border-radius: 25px;
+            box-shadow: -50px 0 0 0 black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="y();">Click Me!</button>
+    <script>
+        function y(){
+            let btn = document.getElementById("btn");
+            let btn2 = document.getElementById("btn2");
+            btn.style.transform = "translate(50px,0px)";
+            btn.style.boxShadow = "-50 0 0 0 black";
+        }
+    </script>
+</body>
+</html>
